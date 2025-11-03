@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr Alex Owusu Amoakoh</title>
+  <meta name="description" content="Personal website of Alex Owusu Amoakoh – profile, research, projects, blog, contact." />
+  <link rel="icon" href="assets/favicon.png">
+  <style>
+    body{margin:0;padding:0;background:#0a0f1d;color:#e8ebf4;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial}
+    a{color:#9ec9ff;text-decoration:none}
+    .landing{position:relative;min-height:100vh;background:url('assets/cover.jpg') center/cover no-repeat;display:grid;place-items:center}
+    .overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.4),rgba(0,0,0,.7))}
+    .hero{position:relative;text-align:center;padding:2rem;color:#fff}
+    .hero h1{margin:.5rem 0;font-size:2rem;text-transform:uppercase;letter-spacing:.1em}
+    .hero p{margin:.3rem 0 1rem;opacity:.9}
+    .avatar{width:120px;height:120px;border-radius:50%;object-fit:cover;border:2px solid #fff;margin:auto;box-shadow:0 0 25px rgba(0,0,0,.6)}
+    .btns{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center}
+    .btn{padding:.6rem 1rem;border:1px solid rgba(255,255,255,.3);border-radius:8px;color:#fff;background:rgba(255,255,255,.1);cursor:pointer}
+    .btn:hover{background:rgba(255,255,255,.2)}
+    .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);display:grid;place-items:center;z-index:50}
+    .modal{background:#111a2e;border:1px solid rgba(255,255,255,.3);border-radius:12px;max-width:900px;max-height:85vh;overflow:auto;padding:1.5rem}
+    .modal h2{text-transform:uppercase;margin-top:0;color:#fff}
+    .close{position:sticky;top:0;float:right;background:rgba(255,255,255,.1);border:none;color:#fff;border-radius:50%;width:30px;height:30px;cursor:pointer}
+    .grid{display:grid;gap:1rem}
+    .cols-2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+    .cols-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+    .card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:1rem}
+    footer{text-align:center;color:#bac2d6;padding:1rem 0}
+    ul{margin-top:.3rem}
+    li{margin-bottom:.5rem;line-height:1.4}
+  </style>
+</head>
+<body>
+  <section class="landing">
+    <div class="overlay"></div>
+    <div class="hero">
+      <img class="avatar" src="assets/portrait.jpg" alt="Portrait">
+      <h1>Dr Alex Owusu Amoakoh</h1>
+      <p>LJMU Natural Capital Hub · Lead Spatial Analyst</p>
+      <div class="btns">
+        <button class="btn" data-modal-target="profile">Profile</button>
+        <button class="btn" data-modal-target="research">Research</button>
+        <button class="btn" data-modal-target="projects">Projects</button>
+        <button class="btn" data-modal-target="blog">Blog</button>
+        <button class="btn" data-modal-target="contact">Contact</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="modal-root"></div>
+
+  <div id="source" style="display:none">
+    <section id="profile">
+      <h2>Profile</h2>
+      <div class="grid cols-2">
+        <div><p>I am the Lead Spatial Analyst at Liverpool John Moores University’s Natural Capital Hub. My work spans research, tool‑building, and policy support for nature recovery and climate resilience. I collaborate with public, private, and NGO partners across the UK and internationally.</p></div>
+        <div><p>Quick links:</p>
+          <ul>
+            <li><a href="https://scholar.google.com/citations?user=_i6G5ZoAAAAJ">Google Scholar</a></li>
+            <li><a href="https://orcid.org/0000-0001-8394-1241">ORCID</a></li>
+            <li><a href="https://www.researchgate.net/profile/Alex-Amoakoh">ResearchGate</a></li>
+            <li><a href="https://profiles.ljmu.ac.uk/19812-alex-owusu-amoakoh/publications">LJMU Profile</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <h3>Selected Publications</h3>
+      <ul>
+        <li><strong>Mensah, J., Amoakoh, A.O. and Kankam, S.,</strong> 2015. <em>Exchange Visit for TCPD Officers: Workshop Report, June 29–30, 2015.</em> USAID/Ghana Sustainable Fisheries Management Project (SFMP). Narragansett, RI: Coastal Resources Center, Graduate School of Oceanography, University of Rhode Island; Hen Mpoano; Spatial Solutions.</li>
+        <li><strong>Amoako, P.K. et al.,</strong> 2017. Assessment of the growth of <em>Leucaena leucocephala</em> seedlings on amended tailings. <em>International Journal of Interdisciplinary Research and Innovations,</em> 5(1), pp.25–28.</li>
+        <li><strong>Amoakoh, A.O. and Kankam, S.,</strong> 2017. Impact of climate change on local livelihoods: a case study of Ankobra estuarine communities. <em>Unpublished report.</em></li>
+        <li><strong>Amoakoh, A.O. et al.,</strong> 2021. Testing the contribution of multi-source remote sensing features for Random Forest classification of the Greater Amanzule tropical peatland. <em>Sensors,</em> 21(10), p.3399. DOI: <a href="https://doi.org/10.3390/s21103399">10.3390/s21103399</a>.</li>
+        <li><strong>Amoakoh, A.O. et al.,</strong> 2021. Tropical peatland classification using multi-sensor Sentinel imagery and Random Forest algorithm in Greater Amanzule, Ghana. <em>IGARSS 2021 IEEE Symposium,</em> pp.5910–5913.</li>
+        <li><strong>Amoakoh, A.O. et al.,</strong> 2017. Effects of pre-sowing treatments on the germination and early growth performance of <em>Pouteria campachiana.</em> <em>Forest Science and Technology,</em> 13(2), pp.83–86. DOI: <a href="https://doi.org/10.1080/21580103.2017.1339494">10.1080/21580103.2017.1339494</a>.</li>
+        <li><strong>Habib, Y. et al.,</strong> 2017. Stimulating riparian buffer on agricultural landscapes: a review from water management and climate change perspective in Ghana. <em>Elixir Agriculture,</em> 102, pp.44536–44541.</li>
+        <li><strong>Jallah, C.K. et al.,</strong> 2017. Community participation in forest management in the Bleih Community Forest, Liberia. <em>North Asian International Research Journal of Multidisciplinary,</em> 3(1), pp.3–23.</li>
+        <li><strong>Amoakoh, A.O. et al.,</strong> 2024. Predictive modelling of land cover changes in the Greater Amanzule peatlands using multi-source remote sensing and machine learning techniques. <em>Remote Sensing,</em> 16(21), p.4013. DOI: <a href="https://doi.org/10.3390/rs16214013">10.3390/rs16214013</a>.</li>
+        <li><strong>Amoakoh, A.O.,</strong> 2024. <em>Unravelling the complexity of tropical peatland governance in Greater Amanzule, Ghana.</em> PhD thesis, Edge Hill University.</li>
+        <li><strong>Owusu, E. and Amoakoh, A.O.,</strong> 2025. Conflict frames associated with state compulsory acquisition of lands in Barekese, Ghana. <em>Frontiers in Sustainable Resource Management,</em> 4, p.1543829. DOI: <a href="https://doi.org/10.3389/fsrmm.2025.1543829">10.3389/fsrmm.2025.1543829</a>.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid cols-3">
+        <div class="card"><h3>NRN Uplift Tool</h3><p>R Shiny decision‑support tool quantifying ecosystem services and natural capital uplift.</p></div>
+        <div class="card"><h3>National Mangrove Mapping</h3><p>Comprehensive national‑level mapping of Ghana’s mangroves using multi‑sensor EO and ML.</p></div>
+        <div class="card"><h3>Peatland Governance</h3><p>Governance structures and stakeholder perspectives in the Greater Amanzule Peatlands.</p></div>
+        <div class="card"><h3>Woodland Carbon Assessment</h3><p>Tier‑2 carbon accounting for AGB, BGB, SOC, deadwood and litter pools across UK estates.</p></div>
+        <div class="card"><h3>LNRS Step‑5 Mapping</h3><p>Spatial decision‑support for local nature recovery strategies in Liverpool City Region.</p></div>
+        <div class="card"><h3>Natural Capital Portal</h3><p>Interactive R Shiny platform integrating NCRAT, WCC and EcoservR modules for policy use.</p></div>
+      </div>
+    </section>
+
+    <section id="blog"><h2>Blog</h2><p>Coming soon.</p></section>
+
+    <section id="contact"><h2>Contact</h2><p>Email: <a href="mailto:a.o.amoakoh@ljmu.ac.uk">a.o.amoakoh@ljmu.ac.uk</a></p><p><a href="assets/cv.pdf">Download CV (PDF)</a></p></section>
+  </div>
+
+  <footer>© <span id="year"></span> Alex Owusu Amoakoh · Hosted on GitHub Pages</footer>
+
+  <script>
+    function openModal(id){const src=document.querySelector(`#source section#${id}`);if(!src)return;const root=document.getElementById('modal-root');root.innerHTML='';const overlay=document.createElement('div');overlay.className='modal-overlay';const modal=document.createElement('div');modal.className='modal';const btn=document.createElement('button');btn.className='close';btn.textContent='✕';btn.onclick=()=>{root.innerHTML='';document.body.style.overflow='auto'};modal.append(btn,src.cloneNode(true));overlay.onclick=e=>{if(e.target===overlay)btn.click()};overlay.append(modal);root.append(overlay);document.body.style.overflow='hidden'}
+    document.querySelectorAll('[data-modal-target]').forEach(b=>b.onclick=()=>openModal(b.dataset.modalTarget));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
